@@ -33,7 +33,7 @@ Insert a new section above the current app-preview hero:
   </video>
   <div class="video-hero__overlay" aria-hidden="true"></div>
   <div class="wrap video-hero__content">
-    <h1 id="video-hero-title" class="hero-logo">Luna</h1>
+    <h1 id="video-hero-title" class="hero-logo">Staia</h1>
     <p class="hero-subtitle">Personal astrology for clearer days.</p>
     <a class="button primary hero-button" href="#get-the-app">...</a>
   </div>

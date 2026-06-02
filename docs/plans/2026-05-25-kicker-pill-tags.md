@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Turn the shared section kicker labels into compact pill-shaped tags inspired by Claura while using Taia's existing colors, font scale, and spacing tokens.
+**Goal:** Turn the shared section kicker labels into compact pill-shaped tags inspired by Claura while using Staia's existing colors, font scale, and spacing tokens.
 
 **Architecture:** Update the shared `.kicker` primitive in `styles/components.css` so About labels inherit the new tag treatment without one-off About-only CSS. Rebuild generated static HTML and verify the About page in-browser.
 

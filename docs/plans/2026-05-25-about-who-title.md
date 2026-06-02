@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Update the Who section title to `Bringing Taia to life.`
+**Goal:** Update the Who section title to `Bringing Staia to life.`
 
 **Architecture:** Keep the existing `section-tag`, `section-title`, and split intro primitives unchanged. Only replace the heading copy in the About page source, rebuild generated HTML, verify rendering, then commit and push.
 
@@ -28,7 +28,7 @@ Change this heading in `src/pages/about.html`:
 to:
 
 ```html
-<h2 id="who-we-are-title" class="section-title">Bringing Taia to life.</h2>
+<h2 id="who-we-are-title" class="section-title">Bringing Staia to life.</h2>
 ```
 
 - [ ] **Step 2: Build generated HTML**
@@ -39,7 +39,7 @@ Run:
 node scripts/build-site.mjs
 ```
 
-Expected: `about.html` contains `Bringing Taia to life.` and no longer contains the old Who section title.
+Expected: `about.html` contains `Bringing Staia to life.` and no longer contains the old Who section title.
 
 - [ ] **Step 3: Verify locally**
 
@@ -53,7 +53,7 @@ curl -I http://127.0.0.1:8081/about.html
 Open `http://127.0.0.1:8081/about.html?v=about-who-title` in the Codex browser and verify:
 
 ```js
-document.querySelector('#who-we-are-title').textContent.trim() === 'Bringing Taia to life.'
+document.querySelector('#who-we-are-title').textContent.trim() === 'Bringing Staia to life.'
 document.documentElement.scrollWidth <= window.innerWidth
 ```
 

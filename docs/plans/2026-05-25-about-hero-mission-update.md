@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Replace the About hero with a Claura-inspired mission opening using the approved Taia mission: "Help 100 million people live better lives."
+**Goal:** Replace the About hero with a Claura-inspired mission opening using the approved Staia mission: "Help 100 million people live better lives."
 
 **Architecture:** Keep the standardized layout and typography primitives intact. Change only the About hero content and minimal hero composition needed to preserve the existing Home-derived typography scale, container alignment, header shell, and footer/content widths.
 
@@ -39,10 +39,10 @@ Expected: the About hero is mission-first and concise.
 Use a short support line that fits the mission:
 
 ```html
-<p>Taia turns astrology into practical guidance for reflection, relationships, timing, and the decisions people carry through everyday life.</p>
+<p>Staia turns astrology into practical guidance for reflection, relationships, timing, and the decisions people carry through everyday life.</p>
 ```
 
-Expected: copy explains what Taia does without competing with the mission headline.
+Expected: copy explains what Staia does without competing with the mission headline.
 
 ### Task 3: Preserve Standardized Typography
 

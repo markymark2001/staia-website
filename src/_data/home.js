@@ -6,7 +6,7 @@ export default {
     },
     {
       title: "Read the pattern",
-      copy: "Taia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.",
+      copy: "Staia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.",
       reverse: true
     },
     {
@@ -78,7 +78,7 @@ export default {
           name: "Elena H.",
           handle: "@elenamoon",
           title: "A pause button.",
-          copy: "Taia has become my pause button when I am spiraling."
+          copy: "Staia has become my pause button when I am spiraling."
         },
         {
           initials: "RB",

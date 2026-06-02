@@ -4,7 +4,7 @@
 
 **Goal:** Keep clean URLs canonical while preserving existing `.html` public links and fixing review-identified accessibility/metadata regressions.
 
-**Architecture:** Add static legacy redirect pages for old `.html` paths that immediately point to the clean directory URLs. Keep clean URLs in all authored navigation, update homepage metadata to Taia, and hide the homepage header from keyboard focus until it is visually visible.
+**Architecture:** Add static legacy redirect pages for old `.html` paths that immediately point to the clean directory URLs. Keep clean URLs in all authored navigation, update homepage metadata to Staia, and hide the homepage header from keyboard focus until it is visually visible.
 
 **Tech Stack:** Eleventy layoutless redirect pages, static HTML meta refresh, CSS visibility state, small browser verification.
 
@@ -41,11 +41,11 @@ Expected: invisible header controls are not focusable before the header appears.
 
 - [ ] **Step 2: Update homepage metadata**
 
-Set homepage front matter to Taia:
+Set homepage front matter to Staia:
 
 ```yaml
-title: Taia
-description: Taia is a personal astrology app.
+title: Staia
+description: Staia is a personal astrology app.
 ```
 
 Expected: generated homepage browser title and meta description match the visible brand.
@@ -70,7 +70,7 @@ Expected: both paths return `200 OK`; clean URL renders full content and `.html`
 
 - [ ] **Step 2: Browser-check**
 
-Open the homepage and privacy clean URL. Confirm the homepage title is Taia, no authored links contain `.html`, and no console errors appear.
+Open the homepage and privacy clean URL. Confirm the homepage title is Staia, no authored links contain `.html`, and no console errors appear.
 
 - [ ] **Step 3: Commit and push**
 

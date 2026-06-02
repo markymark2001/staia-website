@@ -2,7 +2,7 @@
 
 ## Site Purpose
 
-This repository is the public marketing and legal website for Taia, the
+This repository is the public marketing and legal website for Staia, the
 astrology app. It is a static site: there is no server-side runtime, database,
 API route, or client app framework in this repo.
 

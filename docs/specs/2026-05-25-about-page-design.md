@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build one polished company page for Taia that combines the current About and Jobs surfaces without removing the public Jobs footer entry.
+Build one polished company page for Staia that combines the current About and Jobs surfaces without removing the public Jobs footer entry.
 
 ## Approved Structure
 
@@ -19,7 +19,7 @@ The separate public Jobs link remains in the footer, but it points directly to t
 
 ## Content Direction
 
-The page should be concise and avoid a bloated company narrative. It should describe Taia as a personal astrology app that helps people ask better questions, reflect with clarity, and use astrology as practical guidance for real life.
+The page should be concise and avoid a bloated company narrative. It should describe Staia as a personal astrology app that helps people ask better questions, reflect with clarity, and use astrology as practical guidance for real life.
 
 The Jobs section should state when there are no open roles and provide a direct email application path for future opportunities.
 

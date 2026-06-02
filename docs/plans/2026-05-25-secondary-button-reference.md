@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Align the shared secondary button with Claura's actual secondary CTA treatment while using Taia's existing color tokens.
+**Goal:** Align the shared secondary button with Claura's actual secondary CTA treatment while using Staia's existing color tokens.
 
 **Architecture:** Keep the correction in `.button.secondary` inside `styles/components.css` so About and future secondary CTAs inherit a single primitive. Use a filled beige treatment with no visible border, matching the reference button mechanics.
 

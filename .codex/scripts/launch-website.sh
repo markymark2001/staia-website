@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd -P)"
 SITE_DIR="$ROOT_DIR/dist"
-REQUESTED_PORT="${LUNA_WEBSITE_PORT:-8080}"
+REQUESTED_PORT="${STAIA_WEBSITE_PORT:-8080}"
 HOST="127.0.0.1"
 PORT=""
 URL=""
@@ -12,7 +12,7 @@ SERVER_PID=""
 SERVER_READY="false"
 
 fail() {
-  printf '[luna-website] ERROR: %s\n' "$*" >&2
+  printf '[staia-website] ERROR: %s\n' "$*" >&2
   exit 1
 }
 
@@ -44,13 +44,13 @@ PY
 
 select_port() {
   local start_port="$1"
-  local max_port="${LUNA_WEBSITE_MAX_PORT:-65535}"
+  local max_port="${STAIA_WEBSITE_MAX_PORT:-65535}"
   local candidate_port
 
-  [[ "$start_port" =~ ^[0-9]+$ ]] || fail "LUNA_WEBSITE_PORT must be a number."
-  [[ "$max_port" =~ ^[0-9]+$ ]] || fail "LUNA_WEBSITE_MAX_PORT must be a number."
-  (( start_port >= 1 && start_port <= 65535 )) || fail "LUNA_WEBSITE_PORT must be between 1 and 65535."
-  (( max_port >= start_port && max_port <= 65535 )) || fail "LUNA_WEBSITE_MAX_PORT must be between LUNA_WEBSITE_PORT and 65535."
+  [[ "$start_port" =~ ^[0-9]+$ ]] || fail "STAIA_WEBSITE_PORT must be a number."
+  [[ "$max_port" =~ ^[0-9]+$ ]] || fail "STAIA_WEBSITE_MAX_PORT must be a number."
+  (( start_port >= 1 && start_port <= 65535 )) || fail "STAIA_WEBSITE_PORT must be between 1 and 65535."
+  (( max_port >= start_port && max_port <= 65535 )) || fail "STAIA_WEBSITE_MAX_PORT must be between STAIA_WEBSITE_PORT and 65535."
 
   for ((candidate_port = start_port; candidate_port <= max_port; candidate_port++)); do
     if port_is_available "$candidate_port"; then
@@ -97,7 +97,7 @@ fi
 [[ "$SERVER_READY" == "true" ]] || fail "Timed out waiting for $URL."
 
 open -a "Google Chrome" "$URL"
-printf '[luna-website] Serving %s at %s\n' "$SITE_DIR" "$URL"
-printf '[luna-website] Built site directory: %s\n' "$SITE_DIR"
-printf '[luna-website] Press Ctrl-C to stop.\n'
+printf '[staia-website] Serving %s at %s\n' "$SITE_DIR" "$URL"
+printf '[staia-website] Built site directory: %s\n' "$SITE_DIR"
+printf '[staia-website] Press Ctrl-C to stop.\n'
 wait "$SERVER_PID"

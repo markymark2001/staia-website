@@ -4,7 +4,7 @@
 
 **Goal:** Resolve accessibility issues found after the clean URL refactor without changing the clean URL contract.
 
-**Architecture:** Keep the external hero video, but remove markup-level autoplay and let homepage JavaScript start it only when the user has not requested reduced motion. Update remaining homepage accessible names from Luna to Taia so assistive technology and fallback text match the visible brand.
+**Architecture:** Keep the external hero video, but remove markup-level autoplay and let homepage JavaScript start it only when the user has not requested reduced motion. Update remaining homepage accessible names from Luna to Staia so assistive technology and fallback text match the visible brand.
 
 **Tech Stack:** Static HTML, small homepage JavaScript, `prefers-reduced-motion`.
 
@@ -33,11 +33,11 @@ Expected: users with reduced motion do not receive a looping autoplay background
 **Files:**
 - Modify: `src/pages/index.html`
 
-- [ ] **Step 1: Replace stale Luna labels**
+- [ ] **Step 1: Replace stale Staia labels**
 
-Change homepage feature section and screenshot labels from Luna to Taia.
+Change homepage feature section and screenshot labels from Luna to Staia.
 
-Expected: generated homepage accessibility text matches the Taia brand.
+Expected: generated homepage accessibility text matches the Staia brand.
 
 ### Task 3: Verify and Push
 
@@ -50,10 +50,10 @@ Run:
 
 ```bash
 npm run build
-rg -n "Luna app|Luna features|autoplay" dist/index.html
+rg -n "Luna app|Staia features|autoplay" dist/index.html
 ```
 
-Expected: no stale Luna labels and no `autoplay` attribute on the hero video.
+Expected: no stale Staia labels and no `autoplay` attribute on the hero video.
 
 - [ ] **Step 2: Commit and push**
 

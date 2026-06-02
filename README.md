@@ -1,6 +1,6 @@
-# Luna Website
+# Staia Website
 
-Official website for Taia, the astrology mobile app.
+Official website for Staia, the astrology mobile app.
 
 This website hosts the Privacy Policy and Terms of Service required for App Store submission.
 
@@ -27,18 +27,18 @@ GitHub Pages must publish from the Actions workflow artifact, and
 ### 1. Repository
 
 ```bash
-cd luna-website
+cd staia-website
 git remote -v
 ```
 
-Expected repository: `https://github.com/markymark2001/luna-website`.
+Expected repository: `https://github.com/markymark2001/staia-website`.
 
 ### 2. Enable GitHub Pages Actions
 
 Use the repository Pages settings to select **GitHub Actions** as the publishing
 source. The included workflow builds `dist/` and deploys that artifact.
 
-1. Go to `https://github.com/markymark2001/luna-website`.
+1. Go to `https://github.com/markymark2001/staia-website`.
 2. Click **Settings** (top navigation)
 3. Click **Pages** (left sidebar)
 4. Under "Build and deployment":
@@ -244,8 +244,8 @@ Before submitting to App Store, verify:
 
 For questions about this website setup, contact:
 - Email: mark@mediakey.io
-- GitHub: https://github.com/markymark2001/luna-website
+- GitHub: https://github.com/markymark2001/staia-website
 
 ---
 
-**Created for MediaKey Solutions Inc. - Luna App**
+**Created for MediaKey Solutions Inc. - Staia App**

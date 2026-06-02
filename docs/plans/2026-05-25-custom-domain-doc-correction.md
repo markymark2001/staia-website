@@ -22,7 +22,7 @@ Update `architecture.md` to state that the built artifact assumes a domain root 
 
 - [x] **Step 2: Remove project-path setup language**
 
-Update `README.md` so setup points to the actual `markymark2001/luna-website` repository, GitHub Actions Pages publishing, and `https://lunaapp.io/` as the public URL.
+Update `README.md` so setup points to the actual `markymark2001/staia-website` repository, GitHub Actions Pages publishing, and `https://lunaapp.io/` as the public URL.
 
 ### Task 2: Verify and Push
 
@@ -35,7 +35,7 @@ Update `README.md` so setup points to the actual `markymark2001/luna-website` re
 Run:
 
 ```bash
-rg -n "YOUR_USERNAME|github\\.io/luna-website|project path" README.md architecture.md
+rg -n "YOUR_USERNAME|github\\.io/staia-website|project path" README.md architecture.md
 sed -n '1,180p' README.md
 sed -n '1,180p' architecture.md
 ```

@@ -21,7 +21,7 @@
 Run:
 
 ```bash
-gh api repos/markymark2001/luna-website/pages --jq '{build_type, cname, source, https_enforced}'
+gh api repos/markymark2001/staia-website/pages --jq '{build_type, cname, source, https_enforced}'
 ```
 
 Expected before the fix: `build_type` may be `legacy`, which would not deploy an artifact after root HTML files are removed.
@@ -31,7 +31,7 @@ Expected before the fix: `build_type` may be `legacy`, which would not deploy an
 Run:
 
 ```bash
-gh api -X PUT repos/markymark2001/luna-website/pages -f build_type=workflow
+gh api -X PUT repos/markymark2001/staia-website/pages -f build_type=workflow
 ```
 
 Expected after the fix: `build_type` is `workflow` and `cname` remains `lunaapp.io`.

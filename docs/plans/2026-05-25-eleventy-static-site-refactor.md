@@ -23,7 +23,7 @@ Create `package.json` with build, serve, and clean scripts:
 
 ```json
 {
-  "name": "luna-website",
+  "name": "staia-website",
   "private": true,
   "type": "module",
   "scripts": {

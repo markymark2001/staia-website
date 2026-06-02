@@ -76,7 +76,7 @@ Use semantic role tokens:
 --muted: #94877c;
 ```
 
-Expected: the page documents the full usable palette roles, including reference-derived colors and Luna-specific colors.
+Expected: the page documents the full usable palette roles, including reference-derived colors and Staia-specific colors.
 
 - [x] **Step 2: Define typography roles**
 
@@ -115,7 +115,7 @@ Expected: buttons, radius, and motion are first-class sections instead of hidden
 Run:
 
 ```bash
-'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --hide-scrollbars --window-size=1280,900 --screenshot=/tmp/luna-design-system-secondary-fixed.png file:///Users/markvasilyev/.codex/worktrees/ad5c/luna-website/design-system.html
+'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --hide-scrollbars --window-size=1280,900 --screenshot=/tmp/luna-design-system-secondary-fixed.png file:///Users/markvasilyev/.codex/worktrees/ad5c/staia-website/design-system.html
 ```
 
 Expected: the page opens, hero typography fits, secondary button is visible against the header field, and the preview strip renders.
@@ -125,7 +125,7 @@ Expected: the page opens, hero typography fits, secondary button is visible agai
 Run:
 
 ```bash
-'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --hide-scrollbars --window-size=390,900 --screenshot=/tmp/luna-design-system-rewrite-mobile-2.png file:///Users/markvasilyev/.codex/worktrees/ad5c/luna-website/design-system.html
+'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --hide-scrollbars --window-size=390,900 --screenshot=/tmp/luna-design-system-rewrite-mobile-2.png file:///Users/markvasilyev/.codex/worktrees/ad5c/staia-website/design-system.html
 ```
 
 Expected: the hero headline does not clip and controls remain usable at mobile width.
@@ -153,7 +153,7 @@ Run:
 
 ```bash
 git add design-system.html docs/plans/2026-05-23-website-design-system.md docs/plans/2026-05-24-reference-style-guide-design-system.md
-git commit -m "Add Luna website design system"
+git commit -m "Add Staia website design system"
 ```
 
 Expected: one commit contains the standalone design-system page and historical/superseding plans.
@@ -163,7 +163,7 @@ Expected: one commit contains the standalone design-system page and historical/s
 Run:
 
 ```bash
-git fetch https://github.com/markymark2001/luna-website.git main:refs/remotes/origin/main
+git fetch https://github.com/markymark2001/staia-website.git main:refs/remotes/origin/main
 git merge-tree "$(git merge-base HEAD origin/main)" HEAD origin/main
 ```
 
@@ -174,8 +174,8 @@ Expected: no conflict markers or conflicting file entries.
 Run:
 
 ```bash
-git push -u https://github.com/markymark2001/luna-website.git codex/design-system-foundations
-gh pr create --base main --head codex/design-system-foundations --title "[codex] Add Luna website design system" --body-file /tmp/luna-website-design-system-pr.md
+git push -u https://github.com/markymark2001/staia-website.git codex/design-system-foundations
+gh pr create --base main --head codex/design-system-foundations --title "[codex] Add Staia website design system" --body-file /tmp/staia-website-design-system-pr.md
 ```
 
 Expected: non-draft PR opens against `main`.

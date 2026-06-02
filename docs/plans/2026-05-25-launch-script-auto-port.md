@@ -4,7 +4,7 @@
 
 **Goal:** Make `.codex/scripts/launch-website.sh` automatically serve on the next available local port when the preferred port is busy.
 
-**Architecture:** Keep the launcher as a self-contained Bash script that uses Python standard-library socket checks before starting `python3 -m http.server`. Replace the single hard-fail port check with a bounded upward scan from `LUNA_WEBSITE_PORT` or `8080`, then build `URL` after the selected port is known.
+**Architecture:** Keep the launcher as a self-contained Bash script that uses Python standard-library socket checks before starting `python3 -m http.server`. Replace the single hard-fail port check with a bounded upward scan from `STAIA_WEBSITE_PORT` or `8080`, then build `URL` after the selected port is known.
 
 **Tech Stack:** Bash, Python 3 sockets, Python `http.server`, macOS `open`.
 
@@ -20,7 +20,7 @@
 Keep:
 
 ```bash
-REQUESTED_PORT="${LUNA_WEBSITE_PORT:-8080}"
+REQUESTED_PORT="${STAIA_WEBSITE_PORT:-8080}"
 HOST="127.0.0.1"
 PORT=""
 URL=""
@@ -56,13 +56,13 @@ Add a `select_port()` Bash function:
 ```bash
 select_port() {
   local start_port="$1"
-  local max_port="${LUNA_WEBSITE_MAX_PORT:-65535}"
+  local max_port="${STAIA_WEBSITE_MAX_PORT:-65535}"
   local candidate_port
 
-  [[ "$start_port" =~ ^[0-9]+$ ]] || fail "LUNA_WEBSITE_PORT must be a number."
-  [[ "$max_port" =~ ^[0-9]+$ ]] || fail "LUNA_WEBSITE_MAX_PORT must be a number."
-  (( start_port >= 1 && start_port <= 65535 )) || fail "LUNA_WEBSITE_PORT must be between 1 and 65535."
-  (( max_port >= start_port && max_port <= 65535 )) || fail "LUNA_WEBSITE_MAX_PORT must be between LUNA_WEBSITE_PORT and 65535."
+  [[ "$start_port" =~ ^[0-9]+$ ]] || fail "STAIA_WEBSITE_PORT must be a number."
+  [[ "$max_port" =~ ^[0-9]+$ ]] || fail "STAIA_WEBSITE_MAX_PORT must be a number."
+  (( start_port >= 1 && start_port <= 65535 )) || fail "STAIA_WEBSITE_PORT must be between 1 and 65535."
+  (( max_port >= start_port && max_port <= 65535 )) || fail "STAIA_WEBSITE_MAX_PORT must be between STAIA_WEBSITE_PORT and 65535."
 
   for ((candidate_port = start_port; candidate_port <= max_port; candidate_port++)); do
     if port_is_available "$candidate_port"; then
@@ -75,7 +75,7 @@ select_port() {
 }
 ```
 
-Expected: the launcher chooses `8081` when `8080` is busy, and still honors `LUNA_WEBSITE_PORT` as the starting point.
+Expected: the launcher chooses `8081` when `8080` is busy, and still honors `STAIA_WEBSITE_PORT` as the starting point.
 
 - [ ] **Step 4: Use selected port for server and URL**
 
@@ -124,7 +124,7 @@ Expected: the launcher prints `Serving ... at http://127.0.0.1:8081/` or the nex
 Run with a high explicit port:
 
 ```bash
-LUNA_WEBSITE_PORT=8090 ./.codex/scripts/launch-website.sh
+STAIA_WEBSITE_PORT=8090 ./.codex/scripts/launch-website.sh
 ```
 
 Expected: the launcher serves at `http://127.0.0.1:8090/` when `8090` is free. Stop it with Ctrl-C after verification.

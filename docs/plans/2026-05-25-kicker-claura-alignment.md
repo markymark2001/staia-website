@@ -2,9 +2,9 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Correct the shared kicker tag so it matches Claura's actual label treatment more closely while still using Taia's color tokens.
+**Goal:** Correct the shared kicker tag so it matches Claura's actual label treatment more closely while still using Staia's color tokens.
 
-**Architecture:** Keep the fix centralized in `.kicker` inside `styles/components.css`. Remove the outline and over-rounded pill treatment, restore readable 14px text, and use a subtle beige fill with Taia's brown action color.
+**Architecture:** Keep the fix centralized in `.kicker` inside `styles/components.css`. Remove the outline and over-rounded pill treatment, restore readable 14px text, and use a subtle beige fill with Staia's brown action color.
 
 **Tech Stack:** Static HTML partials, shared CSS primitives, Node static build script, local HTTP server, Codex browser evidence.
 

@@ -130,7 +130,7 @@ Use default `.wrap` for:
 Use the standard `.wrap` for the Claura-style media strip so it aligns with the rest of the page:
 
 ```html
-<div class="wrap media-strip about-team" aria-label="Taia team">
+<div class="wrap media-strip about-team" aria-label="Staia team">
 ```
 
 Expected: text, media, jobs, Home, Legal, CTA, and footer align to the same content container. Only the header uses the wider shell.

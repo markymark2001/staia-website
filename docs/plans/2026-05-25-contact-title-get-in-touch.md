@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Change the Contact page title from `Contact Taia` to `Get in touch`.
+**Goal:** Change the Contact page title from `Contact Staia` to `Get in touch`.
 
 **Architecture:** Keep the current split contact section and primitives unchanged. Replace only the heading text in the Contact source fragment, rebuild generated HTML, verify rendering, then commit and push.
 
@@ -22,7 +22,7 @@
 Change this heading in `src/pages/contact.html`:
 
 ```html
-<h1 id="contact-title" class="section-title">Contact Taia</h1>
+<h1 id="contact-title" class="section-title">Contact Staia</h1>
 ```
 
 to:
@@ -39,7 +39,7 @@ Run:
 node scripts/build-site.mjs
 ```
 
-Expected: `contact.html` contains `Get in touch` and no longer contains `Contact Taia`.
+Expected: `contact.html` contains `Get in touch` and no longer contains `Contact Staia`.
 
 - [ ] **Step 3: Verify locally**
 

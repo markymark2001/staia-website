@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Replace the homepage feature-block copy on `website-v2` with user-journey copy grounded in recent Taia conversation research.
+**Goal:** Replace the homepage feature-block copy on `website-v2` with user-journey copy grounded in recent Staia conversation research.
 
 **Architecture:** Keep the existing static homepage structure and four `feature-block` articles. Update only the `h2` and `p` text in `src/pages/index.html`, then run the site builder so root `index.html` stays in sync for GitHub Pages.
 
@@ -25,7 +25,7 @@ Update the existing feature blocks to:
 <p>A text you want to send. A person you cannot read. A decision that keeps looping. A low mood, a strange dream, or a question about where your life is heading.</p>
 
 <h2>Read the pattern</h2>
-<p>Taia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.</p>
+<p>Staia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.</p>
 
 <h2>Go deeper</h2>
 <p>Ask follow-ups, check another angle, or stay with the same question until the answer starts to land.</p>

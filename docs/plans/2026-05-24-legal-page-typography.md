@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Make Privacy Policy and Terms of Service typography match the Taia site design system while staying readable for long legal text.
+**Goal:** Make Privacy Policy and Terms of Service typography match the Staia site design system while staying readable for long legal text.
 
 **Architecture:** Update only the legal page CSS in `styles/pages.css`. Keep generated legal HTML and shared shell unchanged, because the page structure is already correct.
 

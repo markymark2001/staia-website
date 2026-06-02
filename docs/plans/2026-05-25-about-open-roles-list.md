@@ -22,7 +22,7 @@
 - [x] **Step 1: Confirm current Jobs card**
 
 Open `src/pages/about.html`.
-Expected: `#jobs` contains `.about-jobs__inner`, a Jobs kicker, "Want to build Taia with us?", text saying no open roles, and one "Apply by email" button.
+Expected: `#jobs` contains `.about-jobs__inner`, a Jobs kicker, "Want to build Staia with us?", text saying no open roles, and one "Apply by email" button.
 
 - [x] **Step 2: Replace Jobs markup**
 
@@ -33,7 +33,7 @@ Replace the Jobs section content with:
   <div class="wrap about-jobs__inner">
     <div class="about-jobs__heading">
       <p class="kicker">Open roles</p>
-      <h2 id="jobs-title" class="section-title">Come build Taia with us.</h2>
+      <h2 id="jobs-title" class="section-title">Come build Staia with us.</h2>
       <p>We are hiring for a small number of high-impact roles. Send a short note with the role you are interested in and what you would like to build.</p>
     </div>
     <div class="about-jobs__list" aria-label="Open positions">

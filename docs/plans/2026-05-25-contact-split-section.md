@@ -30,7 +30,7 @@ Use this markup in `src/pages/contact.html`:
       <div class="split-intro">
         <div>
           <p class="section-tag">Contact</p>
-          <h1 id="contact-title" class="section-title">Contact Taia</h1>
+          <h1 id="contact-title" class="section-title">Contact Staia</h1>
         </div>
         <div class="split-intro__stack">
           <p class="split-intro__copy">For support, privacy, subscriptions, partnerships, or general questions, reach us by email.</p>
@@ -94,7 +94,7 @@ Open `http://127.0.0.1:8081/contact.html?v=contact-split-section` in the Codex b
 document.querySelector('.contact-page .split-intro') !== null
 document.querySelector('.contact-page .split-intro__stack') !== null
 document.querySelector('.contact-page .section-tag').textContent.trim() === 'Contact'
-document.querySelector('#contact-title').textContent.trim() === 'Contact Taia'
+document.querySelector('#contact-title').textContent.trim() === 'Contact Staia'
 document.querySelector('.contact-page .button.secondary').getAttribute('href') === 'mailto:mark@mediakey.io'
 document.querySelector('.contact-page .content') === null
 document.querySelector('.contact-page .contact-info') === null

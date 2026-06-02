@@ -24,7 +24,7 @@ Change the jobs intro in `src/pages/about.html` from:
 ```html
 <div class="section-intro">
   <p class="section-tag section-tag--center">Open roles</p>
-  <h2 id="jobs-title" class="section-title">Come build Taia with us.</h2>
+  <h2 id="jobs-title" class="section-title">Come build Staia with us.</h2>
   <p>We are hiring for a small number of high-impact roles. Send a short note with the role you are interested in and what you would like to build.</p>
 </div>
 ```

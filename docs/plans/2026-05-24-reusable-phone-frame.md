@@ -19,16 +19,16 @@
 
 - [ ] **Step 1: Study the reference**
 
-Read `/Users/markvasilyev/Downloads/TAIA Landing.html` and use the `.phone` / `.phone-screen` pattern as the source for the reusable frame.
+Read `/Users/markvasilyev/Downloads/STAIA Landing.html` and use the `.phone` / `.phone-screen` pattern as the source for the reusable frame.
 
 - [ ] **Step 2: Update homepage markup**
 
 Change the hero phone wrapper to:
 
 ```html
-<figure class="device-frame device-frame--iphone hero-device" aria-label="Luna app preview">
+<figure class="device-frame device-frame--iphone hero-device" aria-label="Staia app preview">
   <div class="device-frame__screen">
-    <img src="assets/hero-app-screenshot.png" alt="Luna app screenshot">
+    <img src="assets/hero-app-screenshot.png" alt="Staia app screenshot">
   </div>
 </figure>
 ```

@@ -39,9 +39,9 @@ Insert one new section after the hero:
         <p class="kicker">Who we are</p>
         <h2 id="who-we-are-title" class="section-title">A small team building personal cosmic guidance for real life.</h2>
       </div>
-      <p class="about-who__copy">We are building Taia for people who want insight without noise. Our work combines thoughtful product design, conversational guidance, and astrological context so reflection feels simple enough to return to every week.</p>
+      <p class="about-who__copy">We are building Staia for people who want insight without noise. Our work combines thoughtful product design, conversational guidance, and astrological context so reflection feels simple enough to return to every week.</p>
     </div>
-    <div class="about-who__visual" aria-label="Taia company metrics">
+    <div class="about-who__visual" aria-label="Staia company metrics">
       <img src="https://framerusercontent.com/images/3jSoIlDJyMfLx6JTWfHwuwwhjSw.png?width=2144&amp;height=730" alt="">
       <div class="about-who__metrics">
         <article class="about-who__metric">

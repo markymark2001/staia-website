@@ -23,7 +23,7 @@
 Change the About panel markup in `src/pages/about.html` to:
 
 ```html
-<div class="media-stat-panel media-stat-panel--image-only" aria-label="Taia team image">
+<div class="media-stat-panel media-stat-panel--image-only" aria-label="Staia team image">
   <img class="media-stat-panel__image" src="https://website.lunaapp.io/about-stats.webp" alt="">
 </div>
 ```

@@ -33,7 +33,7 @@ Use this right-column markup in `src/pages/contact.html`:
 Add this image panel below the `split-intro` block inside `.contact-section__inner`:
 
 ```html
-<div class="media-stat-panel media-stat-panel--image-only" aria-label="Taia contact image">
+<div class="media-stat-panel media-stat-panel--image-only" aria-label="Staia contact image">
   <img class="media-stat-panel__image" src="https://website.lunaapp.io/about-stats.webp" alt="">
 </div>
 ```

@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add a Claura-inspired footer to the Taia homepage with valid navigation links for the planned site pages.
+**Goal:** Add a Claura-inspired footer to the Staia homepage with valid navigation links for the planned site pages.
 
 **Architecture:** Keep the footer as static HTML in `index.html`, styled by homepage-specific `.site-footer` classes in `style.css`. Add minimal static About, Jobs, and Contact pages so footer navigation does not introduce dead public links.
 
@@ -27,7 +27,7 @@
 **Files:**
 - Modify: `style.css`
 
-- [ ] Add `.site-footer` styles that adapt Claura's structure to Taia's cream and burgundy palette.
+- [ ] Add `.site-footer` styles that adapt Claura's structure to Staia's cream and burgundy palette.
 - [ ] Use a responsive grid: brand block on the left, link groups on the right, stacked on mobile.
 - [ ] Preserve existing `body:not(.home-page) > footer` styling for legal/support pages.
 
