@@ -19,6 +19,7 @@
 }
 
 .video-hero__media,
+.video-hero__ripple,
 .video-hero__overlay {
   position: absolute;
   inset: 0;
@@ -26,12 +27,82 @@
   height: 100%;
 }
 
-.video-hero__media {
+.video-hero__media,
+.video-hero__ripple-media {
   object-fit: cover;
+}
+
+.video-hero__media {
+  z-index: 0;
+}
+
+.video-hero__filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.video-hero__ripple {
+  --ripple-x: 50%;
+  --ripple-y: 50%;
+  --ripple-radius: 0px;
+  --ripple-opacity: 0;
+  --ripple-scale: 1.02;
+
+  inset: -2%;
+  z-index: 1;
+  overflow: hidden;
+  opacity: var(--ripple-opacity);
+  clip-path: circle(var(--ripple-radius) at var(--ripple-x) var(--ripple-y));
+  filter: url("#hero-surface-displacement") saturate(1.14) contrast(1.08);
+  pointer-events: none;
+  transform: scale(var(--ripple-scale));
+  transform-origin: var(--ripple-x) var(--ripple-y);
+  will-change: clip-path, opacity, transform;
+}
+
+.video-hero__ripple-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-hero__ripple::before,
+.video-hero__ripple::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.video-hero__ripple::before {
+  background:
+    radial-gradient(
+      circle at var(--ripple-x) var(--ripple-y),
+      rgba(246, 236, 220, 0.22) 0 6%,
+      rgba(246, 236, 220, 0.08) 16%,
+      rgba(246, 236, 220, 0) 48%
+    );
+  mix-blend-mode: screen;
+}
+
+.video-hero__ripple::after {
+  background:
+    radial-gradient(
+      circle at var(--ripple-x) var(--ripple-y),
+      rgba(255, 255, 255, 0) 42%,
+      rgba(246, 236, 220, 0.2) 48%,
+      rgba(255, 255, 255, 0) 56%
+    );
+  opacity: 0.72;
 }
 
 .video-hero__overlay {
   top: auto;
+  z-index: 2;
   height: min(58dvh, var(--hero-fade-height));
   background: linear-gradient(
     to bottom,
@@ -44,7 +115,7 @@
 
 .video-hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
