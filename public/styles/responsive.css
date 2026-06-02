@@ -36,11 +36,6 @@
   .feature-block--reverse .feature-device {
     transform: none;
   }
-
-  .video-hero__filter,
-  .video-hero__ripple {
-    display: none;
-  }
 }
 
 @media (max-height: 520px) and (orientation: landscape) {
