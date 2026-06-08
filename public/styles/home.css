@@ -223,15 +223,15 @@
 
 .feature-image {
   justify-self: center;
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   margin: 0;
 }
 
 .feature-image img {
   display: block;
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
