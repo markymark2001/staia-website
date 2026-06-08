@@ -14,7 +14,7 @@ API route, or client app framework in this repo.
 - `public/` contains static passthrough files copied to the artifact root.
 - `dist/` is generated build output and must not be edited or committed.
 - GitHub Pages serves the built artifact uploaded by GitHub Actions.
-- `website.lunaapp.io` hosts external website media assets such as the homepage
+- `website.staia.io` hosts external website media assets such as the homepage
   background video.
 
 ## Source Ownership
@@ -104,7 +104,7 @@ Do not bundle large homepage video files in this repo. The homepage background
 video source is the external R2/custom-domain URL:
 
 ```text
-https://website.lunaapp.io/homepage-background.mp4
+https://website.staia.io/homepage-background.mp4
 ```
 
 `public/CNAME` must stay in the passthrough asset set so the built artifact
