@@ -6,15 +6,15 @@ export default {
       image: "https://website.staia.io/1a.webp"
     },
     {
-      title: "Make Your Move",
-      copy: "Choose the right moment with confidence.",
-      image: "https://website.staia.io/2a.webp",
+      title: "Understand Your Chart",
+      copy: "Personal astrology from your exact birth data.",
+      image: "https://website.staia.io/3a.webp",
       reverse: true
     },
     {
-      title: "Understand Your Chart",
-      copy: "Personal astrology from your exact birth data.",
-      image: "https://website.staia.io/3a.webp"
+      title: "Make Your Move",
+      copy: "Choose the right moment with confidence.",
+      image: "https://website.staia.io/2a.webp"
     },
     {
       title: "For Every Day",
