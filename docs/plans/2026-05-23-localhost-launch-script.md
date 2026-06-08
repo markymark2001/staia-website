@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Follow this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add one simple script that serves the static Luna website locally and opens the homepage in Google Chrome.
+**Goal:** Add one simple script that serves the static Staia website locally and opens the homepage in Google Chrome.
 
 **Architecture:** Keep the launcher repo-local under `.codex/scripts` beside the existing Codex review helper. Use Python's standard `http.server` for static file hosting, bind only to `127.0.0.1`, open `index.html` through `http://127.0.0.1:<port>/`, and stop the server when the script exits.
 
@@ -35,13 +35,13 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd -P)"
-PORT="${LUNA_WEBSITE_PORT:-8080}"
+PORT="${STAIA_WEBSITE_PORT:-8080}"
 HOST="127.0.0.1"
 URL="http://$HOST:$PORT/"
 SERVER_PID=""
 
 fail() {
-  printf '[luna-website] ERROR: %s\n' "$*" >&2
+  printf '[staia-website] ERROR: %s\n' "$*" >&2
   exit 1
 }
 
@@ -81,8 +81,8 @@ if ! kill -0 "$SERVER_PID" 2>/dev/null; then
 fi
 
 open -a "Google Chrome" "$URL"
-printf '[luna-website] Serving %s at %s\n' "$ROOT_DIR" "$URL"
-printf '[luna-website] Press Ctrl-C to stop.\n'
+printf '[staia-website] Serving %s at %s\n' "$ROOT_DIR" "$URL"
+printf '[staia-website] Press Ctrl-C to stop.\n'
 wait "$SERVER_PID"
 ```
 
@@ -117,10 +117,10 @@ Expected: exits with status 0 and prints nothing.
 Run:
 
 ```bash
-LUNA_WEBSITE_PORT=8080 ./.codex/scripts/launch-website.sh
+STAIA_WEBSITE_PORT=8080 ./.codex/scripts/launch-website.sh
 ```
 
-Expected: Chrome opens `http://127.0.0.1:8080/`, the Luna landing page renders, and the terminal says the script is serving the repository root. Stop it with Ctrl-C after verification.
+Expected: Chrome opens `http://127.0.0.1:8080/`, the Staia landing page renders, and the terminal says the script is serving the repository root. Stop it with Ctrl-C after verification.
 
 - [ ] **Step 3: HTTP smoke check**
 
@@ -166,7 +166,7 @@ Run:
 ```bash
 ./.codex/scripts/codex-review.sh
 git fetch origin main
-git merge-tree "$(git merge-base HEAD origin/main)" HEAD origin/main >/tmp/luna-website-merge-check.txt
+git merge-tree "$(git merge-base HEAD origin/main)" HEAD origin/main >/tmp/staia-website-merge-check.txt
 git push -u origin codex/localhost-launch-script
 ```
 
