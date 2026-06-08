@@ -55,21 +55,21 @@ export default {
         {
           initials: "C",
           name: "Charu anime \"Queen\"",
-          handle: "15 May 2026",
+          handle: "May 15, 2026",
           title: "Spiritual bestie vibes",
           copy: "I love this app so much. It's giving me spiritual bestie vibes. I love it."
         },
         {
           initials: "H",
           name: "Heather",
-          handle: "22 May 2026",
+          handle: "May 22, 2026",
           title: "Learn yourself",
           copy: "Great place to learn yourself, your sign, and relationships. Love it."
         },
         {
           initials: "R",
           name: "Reabetswe Nteo",
-          handle: "7 May 2026",
+          handle: "May 7, 2026",
           title: "Makes me feel good",
           copy: "I'm so in love with Staia. It makes me feel good whenever I feel down."
         }
@@ -80,21 +80,21 @@ export default {
         {
           initials: "T",
           name: "Tebogo Rapoo",
-          handle: "1 June 2026",
+          handle: "June 1, 2026",
           title: "On point",
           copy: "It's on point. Great app, you won't be disappointed."
         },
         {
           initials: "R",
           name: "RATHI SASIKUMAR",
-          handle: "16 April 2026",
+          handle: "April 16, 2026",
           title: "Understand yourself",
           copy: "Great application to understand yourself."
         },
         {
           initials: "C",
           name: "Cheshta Modi",
-          handle: "20 April 2026",
+          handle: "April 20, 2026",
           title: "Life saver",
           copy: "The most important thing I ever heard about. I have no words for these. Just try once, you get it."
         }
