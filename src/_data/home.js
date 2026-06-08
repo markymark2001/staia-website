@@ -29,21 +29,24 @@ export default {
         {
           initials: "H",
           name: "Haleymeshale",
-          handle: "Jun 4, 2026",
+          handle: "Haleymeshale",
+          date: "4 Jun",
           title: "LOVE IT",
           copy: "Best thing I did this year was download this app. I've never felt so seen. It's like talking to a friend who just gets your soul so deeply."
         },
         {
           initials: "P",
           name: "Patron7370",
-          handle: "May 17, 2026",
+          handle: "Patron7370",
+          date: "17 May",
           title: "Amazing",
           copy: "You need to get this app and after this nothing else."
         },
         {
           initials: "P",
           name: "PreetamAIPro",
-          handle: "Jan 11, 2026",
+          handle: "PreetamAIPro",
+          date: "11 Jan",
           title: "It is serious",
           copy: "I never thought AI and astrology can reveal so many things which even the celebrity astrologers have failed so far."
         }
@@ -55,21 +58,24 @@ export default {
         {
           initials: "C",
           name: "Charu anime \"Queen\"",
-          handle: "May 15, 2026",
+          handle: "Charu anime \"Queen\"",
+          date: "15 May",
           title: "Spiritual bestie vibes",
           copy: "I love this app so much. It's giving me spiritual bestie vibes. I love it."
         },
         {
           initials: "H",
           name: "Heather",
-          handle: "May 22, 2026",
+          handle: "Heather",
+          date: "22 May",
           title: "Learn yourself",
           copy: "Great place to learn yourself, your sign, and relationships. Love it."
         },
         {
           initials: "R",
           name: "Reabetswe Nteo",
-          handle: "May 7, 2026",
+          handle: "Reabetswe Nteo",
+          date: "7 May",
           title: "Makes me feel good",
           copy: "I'm so in love with Staia. It makes me feel good whenever I feel down."
         }
@@ -80,21 +86,24 @@ export default {
         {
           initials: "T",
           name: "Tebogo Rapoo",
-          handle: "June 1, 2026",
+          handle: "Tebogo Rapoo",
+          date: "1 Jun",
           title: "On point",
           copy: "It's on point. Great app, you won't be disappointed."
         },
         {
           initials: "R",
           name: "RATHI SASIKUMAR",
-          handle: "April 16, 2026",
+          handle: "RATHI SASIKUMAR",
+          date: "16 Apr",
           title: "Understand yourself",
           copy: "Great application to understand yourself."
         },
         {
           initials: "C",
           name: "Cheshta Modi",
-          handle: "April 20, 2026",
+          handle: "Cheshta Modi",
+          date: "20 Apr",
           title: "Life saver",
           copy: "The most important thing I ever heard about. I have no words for these. Just try once, you get it."
         }
