@@ -85,6 +85,63 @@
   }
 }
 
+@media (max-width: 900px) {
+  .download-cta {
+    padding: 56px 0;
+  }
+
+  .download-cta__inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: var(--space-6);
+    padding: 44px 24px 0;
+    text-align: center;
+  }
+
+  .download-cta__copy {
+    justify-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .download-cta h2 {
+    max-width: 100%;
+    font-size: clamp(31px, 8.5vw, 36px);
+  }
+
+  .download-cta__actions,
+  .download-cta__meta {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .download-cta__actions {
+    align-items: center;
+  }
+
+  .download-cta__meta {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .download-cta__preview .download-cta__device {
+    width: min(280px, 76vw);
+    transform: translateY(24%);
+  }
+
+  .download-cta__preview {
+    position: relative;
+    inset: auto;
+    justify-content: center;
+    margin-top: -8px;
+    margin-left: 0;
+    width: 100%;
+    max-height: 440px;
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 720px) {
   .container,
   .wrap {
@@ -158,64 +215,6 @@
 
   .reviews-head {
     margin-bottom: var(--space-10);
-  }
-
-  .download-cta {
-    padding: 56px 0;
-  }
-
-  .download-cta__inner {
-    grid-template-columns: 1fr;
-    min-height: 0;
-    gap: var(--space-6);
-    padding: 44px 24px 0;
-    text-align: center;
-  }
-
-  .download-cta__copy {
-    justify-items: center;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
-
-  .download-cta h2 {
-    max-width: 100%;
-  }
-
-  .download-cta h2 {
-    font-size: clamp(31px, 8.5vw, 36px);
-  }
-
-  .download-cta__actions,
-  .download-cta__meta {
-    justify-content: center;
-    max-width: 100%;
-  }
-
-  .download-cta__actions {
-    align-items: center;
-  }
-
-  .download-cta__meta {
-    flex-wrap: wrap;
-    row-gap: 8px;
-  }
-
-  .download-cta__preview .download-cta__device {
-    width: min(280px, 76vw);
-    transform: translateY(24%);
-  }
-
-  .download-cta__preview {
-    position: relative;
-    inset: auto;
-    justify-content: center;
-    margin-top: -8px;
-    margin-left: 0;
-    width: 100%;
-    max-height: 440px;
-    overflow: hidden;
   }
 
   .site-footer {

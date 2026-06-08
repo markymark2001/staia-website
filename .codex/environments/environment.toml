@@ -1,0 +1,7 @@
+version = 1
+name = "staia-website"
+
+[[actions]]
+name = "Launch Website"
+icon = "run"
+command = "./.codex/scripts/launch-website.sh"

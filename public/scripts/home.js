@@ -26,7 +26,11 @@ const syncHeroVideoMotion = () => {
 };
 
 syncHeroVideoMotion();
-reducedMotion.addEventListener("change", syncHeroVideoMotion);
+if (typeof reducedMotion.addEventListener === "function") {
+  reducedMotion.addEventListener("change", syncHeroVideoMotion);
+} else if (typeof reducedMotion.addListener === "function") {
+  reducedMotion.addListener(syncHeroVideoMotion);
+}
 
 const header = document.querySelector(".site-header");
 const heroCta = document.querySelector(".video-hero__bottom .button");

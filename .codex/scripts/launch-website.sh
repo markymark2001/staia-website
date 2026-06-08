@@ -29,6 +29,16 @@ command -v npm >/dev/null 2>&1 || fail "npm is required."
 command -v open >/dev/null 2>&1 || fail "macOS open is required."
 [[ -f "$ROOT_DIR/package.json" ]] || fail "package.json not found at $ROOT_DIR."
 
+ensure_dependencies() {
+  if [[ -x "$ROOT_DIR/node_modules/.bin/eleventy" ]]; then
+    return 0
+  fi
+
+  [[ -f "$ROOT_DIR/package-lock.json" ]] || fail "package-lock.json not found at $ROOT_DIR."
+  printf '[staia-website] Installing dependencies with npm ci...\n'
+  npm --prefix "$ROOT_DIR" ci
+}
+
 port_is_available() {
   local candidate_port="$1"
   python3 - "$HOST" "$candidate_port" <<'PY' >/dev/null 2>&1
@@ -65,6 +75,7 @@ select_port() {
 select_port "$REQUESTED_PORT"
 URL="http://$HOST:$PORT/"
 
+ensure_dependencies
 npm --prefix "$ROOT_DIR" run build
 [[ -f "$SITE_DIR/index.html" ]] || fail "Built index.html not found at $SITE_DIR."
 
