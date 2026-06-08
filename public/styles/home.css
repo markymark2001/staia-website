@@ -113,15 +113,20 @@
 }
 
 .features-inner {
+  width: min(var(--container-wide), calc(100% - var(--page-gutter)));
   display: grid;
   gap: var(--section-stack-gap);
 }
 
 .feature-block {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) minmax(520px, 600px);
   align-items: center;
-  gap: var(--layout-gap);
+  gap: clamp(40px, 5vw, 72px);
+}
+
+.feature-block--reverse {
+  grid-template-columns: minmax(520px, 600px) minmax(0, 1fr);
 }
 
 .feature-block--reverse .feature-copy {
@@ -223,15 +228,15 @@
 
 .feature-image {
   justify-self: center;
-  width: 400px;
-  height: 400px;
+  width: min(600px, 100%);
+  aspect-ratio: 1;
   margin: 0;
 }
 
 .feature-image img {
   display: block;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

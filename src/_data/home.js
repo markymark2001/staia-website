@@ -1,24 +1,24 @@
 export default {
   features: [
     {
-      title: "Say what’s real",
-      copy: "A text you want to send. A person you cannot read. A decision that keeps looping. A low mood, a strange dream, or a question about where your life is heading.",
+      title: "Ask About Life",
+      copy: "Love, work, timing, and what's next.",
       image: "https://website.staia.io/1a.webp"
     },
     {
-      title: "Read the pattern",
-      copy: "Staia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.",
+      title: "Make Your Move",
+      copy: "Choose the right moment with confidence.",
       image: "https://website.staia.io/2a.webp",
       reverse: true
     },
     {
-      title: "Go deeper",
-      copy: "Ask follow-ups, check another angle, or stay with the same question until the answer starts to land.",
+      title: "Understand Your Chart",
+      copy: "Personal astrology from your exact birth data.",
       image: "https://website.staia.io/3a.webp"
     },
     {
-      title: "Move with trust",
-      copy: "Leave with clearer words, better timing, stronger boundaries, or an intention that helps you meet the moment instead of spiraling around it.",
+      title: "For Every Day",
+      copy: "Here for the highs, lows, and in-betweens.",
       image: "https://website.staia.io/4a.webp",
       reverse: true
     }
@@ -27,25 +27,25 @@ export default {
     {
       reviews: [
         {
-          initials: "MR",
-          name: "Maya R.",
-          handle: "@mayarosen",
-          title: "Finally had words for it.",
-          copy: "It gave me a way to name what I was feeling before I had the words."
+          initials: "H",
+          name: "Haleymeshale",
+          handle: "Haleymeshale",
+          title: "LOVE IT",
+          copy: "Best thing I did this year was download this app. I've never felt so seen. It's like talking to a friend who just gets your soul so deeply."
         },
         {
-          initials: "JS",
-          name: "Jordan S.",
-          handle: "@jord.s",
-          title: "Specific enough to use.",
-          copy: "The prompts are clear enough that I actually know what to do next."
+          initials: "P",
+          name: "Patron7370",
+          handle: "Patron7370",
+          title: "Amazing",
+          copy: "You need to get this app and after this nothing else."
         },
         {
-          initials: "AL",
-          name: "Ari L.",
-          handle: "@ariluna",
-          title: "My pre-conversation ritual.",
-          copy: "I use it before big conversations. It helps me slow down."
+          initials: "P",
+          name: "PreetamAIPro",
+          handle: "PreetamAIPro",
+          title: "It is serious",
+          copy: "I never thought AI and astrology can reveal so many things which even the celebrity astrologers have failed so far."
         }
       ]
     },
@@ -53,50 +53,50 @@ export default {
       reverse: true,
       reviews: [
         {
-          initials: "SK",
-          name: "Sam K.",
-          handle: "@sam.asking",
-          title: "Grounded, not generic.",
-          copy: "The astrology feels grounded. It points me back to my own choices."
+          initials: "C",
+          name: "Charu anime \"Queen\"",
+          handle: "Charu anime \"Queen\"",
+          title: "Spiritual bestie vibes",
+          copy: "I love this app so much. It's giving me spiritual bestie vibes. I love it."
         },
         {
-          initials: "LD",
-          name: "Leah D.",
-          handle: "@leahday",
-          title: "Came for the chart.",
-          copy: "I came for the chart. I stayed because the advice is practical."
+          initials: "H",
+          name: "Heather",
+          handle: "Heather",
+          title: "Learn yourself",
+          copy: "Great place to learn yourself, your sign, and relationships. Love it."
         },
         {
-          initials: "PK",
-          name: "Priya K.",
-          handle: "@priyaaaa",
-          title: "One question I can answer.",
-          copy: "It turns a messy day into one question I can actually answer."
+          initials: "R",
+          name: "Reabetswe Nteo",
+          handle: "Reabetswe Nteo",
+          title: "Makes me feel good",
+          copy: "I'm so in love with Staia. It makes me feel good whenever I feel down."
         }
       ]
     },
     {
       reviews: [
         {
-          initials: "EH",
-          name: "Elena H.",
-          handle: "@elenamoon",
-          title: "A pause button.",
-          copy: "Staia has become my pause button when I am spiraling."
+          initials: "T",
+          name: "Tebogo Rapoo",
+          handle: "Tebogo Rapoo",
+          title: "On point",
+          copy: "It's on point. Great app, you won't be disappointed."
         },
         {
-          initials: "RB",
-          name: "Rae B.",
-          handle: "@raeb",
-          title: "Calm, pretty, direct.",
-          copy: "It is calm, pretty, and surprisingly direct when I need it."
+          initials: "R",
+          name: "RATHI SASIKUMAR",
+          handle: "RATHI SASIKUMAR",
+          title: "Understand yourself",
+          copy: "Great application to understand yourself."
         },
         {
-          initials: "JM",
-          name: "June M.",
-          handle: "@junem",
-          title: "More than prediction.",
-          copy: "I like that it does not just predict. It helps me reflect."
+          initials: "C",
+          name: "Cheshta Modi",
+          handle: "Cheshta Modi",
+          title: "Life saver",
+          copy: "The most important thing I ever heard about. I have no words for these. Just try once, you get it."
         }
       ]
     }

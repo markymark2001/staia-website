@@ -214,12 +214,24 @@
   background: var(--cream-section);
 }
 
+.media-stat-panel--image-only {
+  display: block;
+  min-height: 0;
+}
+
 .media-stat-panel__image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.media-stat-panel--image-only .media-stat-panel__image {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .media-stat-panel__grid {

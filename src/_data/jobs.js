@@ -1,19 +1,19 @@
 export default {
   openRoles: [
     {
-      title: "Founding Product Designer",
+      title: "AI UGC Content Creator",
       meta: "Remote · Full-time",
-      subject: "Founding%20Product%20Designer"
+      subject: "AI%20UGC%20Content%20Creator"
     },
     {
-      title: "Founding iOS Engineer",
+      title: "Podcast Video Editor",
       meta: "Remote · Full-time",
-      subject: "Founding%20iOS%20Engineer"
+      subject: "Podcast%20Video%20Editor"
     },
     {
-      title: "Astrology Content Lead",
+      title: "Founding Full Stack Engineer",
       meta: "Remote · Full-time",
-      subject: "Astrology%20Content%20Lead"
+      subject: "Founding%20Full%20Stack%20Engineer"
     }
   ]
 };
