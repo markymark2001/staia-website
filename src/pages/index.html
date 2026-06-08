@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Staia
 description: Staia is a personal astrology app.
 bodyClass: home-page
-stylesheetHref: /style.css?v=20260524-22
+stylesheetHref: /style.css?v=20260608-2
 pageScripts:
   - /scripts/home.js
 permalink: index.html
@@ -50,10 +50,8 @@ permalink: index.html
           <h2>{{ feature.title }}</h2>
           <p>{{ feature.copy }}</p>
         </div>
-        <figure class="device-frame device-frame--iphone feature-device" aria-label="Staia app feature preview">
-          <div class="device-frame__screen">
-            <img src="https://website.staia.io/taiaphone.webp" alt="Staia app screenshot">
-          </div>
+        <figure class="feature-image" aria-label="Staia app feature preview">
+          <img src="{{ feature.image }}" width="320" height="320" alt="Staia app screenshot">
         </figure>
       </article>
       {% endfor %}

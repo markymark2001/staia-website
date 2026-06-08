@@ -32,8 +32,8 @@
     padding-right: 0;
   }
 
-  .feature-device,
-  .feature-block--reverse .feature-device {
+  .feature-image,
+  .feature-block--reverse .feature-image {
     transform: none;
   }
 }
@@ -200,7 +200,7 @@
   }
 
   .feature-block--reverse .feature-copy,
-  .feature-block--reverse .feature-device {
+  .feature-block--reverse .feature-image {
     order: initial;
   }
 
@@ -308,10 +308,6 @@
     width: min(330px, 82vw);
   }
 
-  .feature-device {
-    width: min(330px, 82vw);
-  }
-
   .device-frame--iphone {
     padding: 8px;
     border-radius: 40px;
@@ -351,8 +347,8 @@
 }
 
 @media (max-width: 720px) and (prefers-reduced-motion: reduce) {
-  .feature-device,
-  .feature-block--reverse .feature-device {
+  .feature-image,
+  .feature-block--reverse .feature-image {
     transform: none;
   }
 }

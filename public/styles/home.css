@@ -128,7 +128,7 @@
   order: 2;
 }
 
-.feature-block--reverse .feature-device {
+.feature-block--reverse .feature-image {
   order: 1;
 }
 
@@ -221,23 +221,18 @@
   }
 }
 
-.feature-device {
+.feature-image {
   justify-self: center;
-  width: min(320px, 76vw);
+  width: 320px;
+  height: 320px;
+  margin: 0;
 }
 
-.feature-device::after {
-  position: absolute;
-  right: 9%;
-  bottom: -8%;
-  left: 9%;
-  height: 13%;
-  border-radius: 50%;
-  background: rgba(43, 24, 10, 0.2);
-  filter: blur(22px);
-  transform: translateZ(-1px);
-  content: "";
-  pointer-events: none;
+.feature-image img {
+  display: block;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
 }
 
 .reviews {

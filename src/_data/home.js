@@ -2,20 +2,24 @@ export default {
   features: [
     {
       title: "Say what’s real",
-      copy: "A text you want to send. A person you cannot read. A decision that keeps looping. A low mood, a strange dream, or a question about where your life is heading."
+      copy: "A text you want to send. A person you cannot read. A decision that keeps looping. A low mood, a strange dream, or a question about where your life is heading.",
+      image: "https://website.staia.io/1.webp"
     },
     {
       title: "Read the pattern",
       copy: "Staia looks at your placements, timing, compatibility, and current energy to give you guidance that feels personal instead of generic.",
+      image: "https://website.staia.io/2.webp",
       reverse: true
     },
     {
       title: "Go deeper",
-      copy: "Ask follow-ups, check another angle, or stay with the same question until the answer starts to land."
+      copy: "Ask follow-ups, check another angle, or stay with the same question until the answer starts to land.",
+      image: "https://website.staia.io/3.webp"
     },
     {
       title: "Move with trust",
       copy: "Leave with clearer words, better timing, stronger boundaries, or an intention that helps you meet the moment instead of spiraling around it.",
+      image: "https://website.staia.io/4.webp",
       reverse: true
     }
   ],
