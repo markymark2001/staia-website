@@ -64,10 +64,9 @@ permalink: index.html
       <div class="review-track{% if row.reverse %} review-track--reverse{% endif %}">
         <div class="review-group">
           {% for review in row.reviews %}
-          <article class="review-card">
+          <article class="review-card" data-review-date="{{ review.date }}">
             <div class="review-card__top">
               <div class="review-person"><span class="review-avatar">{{ review.initials }}</span><span><b>{{ review.name }}</b><small>{{ review.handle }}</small></span></div>
-              <span class="review-date">{{ review.date }}</span>
               <span class="review-stars" aria-hidden="true">★★★★★</span>
             </div>
             <h3>{{ review.title }}</h3>
