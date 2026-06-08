@@ -97,8 +97,9 @@ compatibility.
 ## Asset Contract
 
 Styles are split under `public/styles/` and loaded through `public/style.css`.
-Homepage behavior lives in `public/scripts/home.js`. App screenshots and logos
-live under `public/assets/`.
+Homepage behavior lives in `public/scripts/home.js`. Logos and small root site
+assets live under `public/`; app screenshots and large media can use the
+external `website.staia.io` media domain.
 
 Do not bundle large homepage video files in this repo. The homepage background
 video source is the external R2/custom-domain URL:
