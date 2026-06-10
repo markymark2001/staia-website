@@ -41,14 +41,6 @@ export default {
           date: "17 May",
           title: "Amazing",
           copy: "You need to get this app and after this nothing else."
-        },
-        {
-          initials: "P",
-          name: "PreetamAIPro",
-          handle: "PreetamAIPro",
-          date: "11 Jan",
-          title: "It is serious",
-          copy: "I never thought AI and astrology can reveal so many things which even the celebrity astrologers have failed so far."
         }
       ]
     },
