@@ -330,15 +330,16 @@
   display: none;
 }
 
-.review-date,
+.review-card::before,
 .review-person small {
   grid-column: 2;
   justify-self: end;
   text-align: right;
 }
 
-.review-date {
+.review-card::before {
   grid-row: 1;
+  content: attr(data-review-date);
 }
 
 .review-person small {
@@ -375,7 +376,7 @@
   text-wrap: pretty;
 }
 
-.review-date,
+.review-card::before,
 .review-person small,
 .review-card p {
   color: var(--muted);
@@ -383,7 +384,7 @@
   line-height: 1.4;
 }
 
-.review-date,
+.review-card::before,
 .review-person small,
 .review-card p {
   font-weight: 300;
