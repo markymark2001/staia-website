@@ -115,8 +115,9 @@ contains `dist/CNAME` for the `lunaapp.io` GitHub Pages custom domain.
 
 GitHub Pages must stay in workflow publishing mode. The workflow at
 `.github/workflows/pages.yml` installs dependencies with `npm ci`, runs
-`npm run build`, uploads `dist` with `actions/upload-pages-artifact`, and
-deploys with `actions/deploy-pages` only on pushes to `main`.
+`npm run build`, uploads `dist` with the current Node 24-compatible
+`actions/upload-pages-artifact` major, and deploys with the current Node
+24-compatible `actions/deploy-pages` major only on pushes to `main`.
 
 Pull requests should run the build job and skip deploy. After changing Pages
 workflow behavior, generated URL behavior, `public/CNAME`, or artifact shape,
