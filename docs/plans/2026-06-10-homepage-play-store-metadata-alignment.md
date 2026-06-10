@@ -74,7 +74,7 @@ git diff --check
 
 Expected: no whitespace errors.
 
-- [ ] **Step 6: Commit and push**
+- [x] **Step 6: Commit and push**
 
 Run:
 
