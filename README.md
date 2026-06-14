@@ -223,7 +223,7 @@ Before submitting to App Store, verify:
 - [ ] Terms of Service is accessible at `https://lunaapp.io/terms/`
 - [ ] HTTPS is enabled (green padlock in browser)
 - [ ] Links work on mobile devices (test in Safari on iPhone)
-- [ ] Contact email is correct and monitored: mark@mediakey.io
+- [ ] Contact email is correct and monitored: support@staia.io
 - [ ] Company name is correct: MediaKey Solutions Inc.
 - [ ] Effective dates are current
 - [ ] Age restriction is 17+ (matches App Store rating)
@@ -236,14 +236,14 @@ Before submitting to App Store, verify:
 - Notify users of material changes (via email/in-app notification)
 
 **Monitoring:**
-- Monitor mark@mediakey.io for privacy inquiries
+- Monitor support@staia.io for privacy inquiries
 - Respond to user data requests within 30 days (GDPR/CCPA)
 - Keep GitHub repository private if you add sensitive information
 
 ## Support
 
 For questions about this website setup, contact:
-- Email: mark@mediakey.io
+- Email: support@staia.io
 - GitHub: https://github.com/markymark2001/staia-website
 
 ---
